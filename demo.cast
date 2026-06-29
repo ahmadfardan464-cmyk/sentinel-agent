@@ -1,0 +1,3 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1782744281, "env": {"SHELL": null, "TERM": null}, "title": "Sentinel Agent Demo"}
+[0.156104, "o", "\r\n🤖 Sentinel Agent Starting...\r\n\r\n🔑 Setting up COTI wallet...\r\n✅ Wallet setup complete (mock)\r\n🪙 Deploying Private Bounty Token...\r\n✅ Token deployed (mock)\r\n🔍 Scanning contract: 0x1234567890abcdef\r\n  └─ Running Slither...\r\n  └─ Filtering false positives with LLM...\r\n✅ Found 1 vulnerabilities\r\n📬 Submitting encrypted report...\r\n✅ Report submitted (encrypted)\r\n"]
+[0.158156, "o", "💰 Claiming bounty for report: 0x...\r\n✅ Bounty claimed (private)\r\n\r\n🎉 Total earned: 5000 BBT (encrypted)\r\n\r\n🏁 Agent run complete\r\n\r\n"]
