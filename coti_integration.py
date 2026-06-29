@@ -11,14 +11,28 @@ from typing import Optional, Dict, Any
 class CotiIntegration:
     """COTI SDK integration layer"""
     
-    def __init__(self, network: str = "testnet"):
+    def __init__(self, network: str = "testnet", rpc_url: str = None, chain_id: int = 7082400):
         self.network = network
+        self.rpc_url = rpc_url or "https://testnet.coti.io/rpc"
+        self.chain_id = chain_id
         self.account = None
         self.aes_key = None
         self.private_token_contract = None
+        print(f"  📡 Connected to: {self.rpc_url} (Chain ID: {self.chain_id})")
         
-    async def create_account(self) -> Dict[str, str]:
-        """Create COTI account with wallet"""
+    async def create_account(self, user_address: str = None) -> Dict[str, str]:
+        """Create COTI account with wallet (or use MetaMask address)"""
+        if user_address:
+            print(f"  🦊 Using MetaMask wallet on {self.network}...")
+            self.account = {
+                "address": user_address,
+                "public_key": "0x...",
+                "network": self.network,
+                "source": "metamask"
+            }
+            print(f"  ✅ Wallet connected: {self.account['address']}")
+            return self.account
+        
         print(f"  Creating COTI account on {self.network}...")
         # TODO: Call coti-mcp create_account tool
         # response = await mcp_client.call_tool("create_account", {})
@@ -27,7 +41,8 @@ class CotiIntegration:
         self.account = {
             "address": "0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1",
             "public_key": "0x...",
-            "network": self.network
+            "network": self.network,
+            "source": "auto-generated"
         }
         print(f"  ✅ Account created: {self.account['address']}")
         return self.account

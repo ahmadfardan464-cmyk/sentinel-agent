@@ -1,0 +1,7 @@
+{
+  "wallet": "0x4b5cC5cBdC7756aa8234fF8731D0878d8fBa1cef",
+  "network": "testnet",
+  "rpc_url": "https://testnet.coti.io/rpc",
+  "token_contract": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
+  "timestamp": "2026-06-30T06:47:00+07:00"
+}

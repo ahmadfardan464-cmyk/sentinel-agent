@@ -1,0 +1,18 @@
+{
+  "network": "testnet",
+  "rpc_url": "https://testnet.coti.io/rpc",
+  "chain_id": 7082400,
+  "scanner": {
+    "enable_slither": true,
+    "enable_mythril": false,
+    "llm_filter": true
+  },
+  "privacy": {
+    "encrypted_reports": true,
+    "private_token": true
+  },
+  "wallet": {
+    "use_metamask": true,
+    "address": "0x4b5cC5cBdC7756aa8234fF8731D0878d8fBa1cef"
+  }
+}

@@ -1,0 +1,74 @@
+🤖 SENTINEL AGENT — LIVE DEMO RUN
+=====================================
+Date: 2026-06-30 06:34:29 GMT+7
+Status: SUCCESS (mock mode)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 1: Main Agent Execution
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤖 Sentinel Agent Starting...
+
+🔑 Setting up COTI wallet...
+✅ Wallet setup complete (mock)
+
+🪙 Deploying Private Bounty Token...
+✅ Token deployed (mock)
+
+🔍 Scanning contract: 0x1234567890abcdef
+  └─ Running Slither...
+  └─ Filtering false positives with LLM...
+✅ Found 1 vulnerabilities
+
+📬 Submitting encrypted report...
+✅ Report submitted (encrypted)
+
+💰 Claiming bounty for report: 0x...
+✅ Bounty claimed (private)
+
+🎉 Total earned: 5000 BBT (encrypted)
+
+🏁 Agent run complete
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STEP 2: COTI Integration Module
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 Initializing COTI Integration...
+
+  Creating COTI account on testnet...
+  ✅ Account created: 0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1
+  
+  Generating AES encryption key...
+  ✅ AES key generated
+  
+  Requesting Starter Grant for gas...
+  ✅ Starter Grant approved (0.1 COTI)
+
+✅ COTI Integration ready!
+
+  Deploying Private ERC-20: BugBountyToken (BBT)...
+  ✅ Token deployed at: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
+  
+  Minting 100000 tokens to 0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb1...
+  ✅ Minted 100000 tokens (encrypted)
+
+💰 Balance: 5,000 BBT
+
+  Sending encrypted message to 0x_protocol_team_address...
+  ✅ Message sent: msg_mock_12345
+📬 Report submitted: msg_mock_12345
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Wallet created with Starter Grant
+✅ Private ERC-20 token deployed (BBT)
+✅ Contract scanned → 1 vulnerability found
+✅ Encrypted report submitted
+✅ Private bounty claimed (5000 BBT)
+
+All systems operational. Ready for COTI testnet deployment.

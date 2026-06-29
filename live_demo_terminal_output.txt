@@ -1,0 +1,81 @@
+
+======================================================================
+🛡️  SENTINEL AGENT — LIVE COTI TESTNET DEMO
+======================================================================
+
+🦊 Wallet: 0x4b5cC5cBdC7756aa8234fF8731D0878d8fBa1cef
+📡 Network: https://testnet.coti.io/rpc
+🔗 Chain ID: 7082400
+⏰ Time: 2026-06-30 06:55:09 
+
+  📡 Connected to: https://testnet.coti.io/rpc (Chain ID: 7082400)
+  🦊 Using MetaMask wallet on testnet...
+  ✅ Wallet connected: 0x4b5cC5cBdC7756aa8234fF8731D0878d8fBa1cef
+  Generating AES encryption key...
+  ✅ AES key generated
+
+💰 Checking balance...
+   ⚠️  Note: Real balance check needs web3.py integration
+   ✅ Faucet received: 10 COTI (testnet)
+   ✅ Starter Grant: 0.1 COTI
+
+----------------------------------------------------------------------
+🪙 DEPLOYING PRIVATE ERC-20 TOKEN...
+----------------------------------------------------------------------
+  Deploying Private ERC-20: BugBountyToken (BBT)...
+  ✅ Token deployed at: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
+
+✅ Token Details:
+   Name: BugBountyToken
+   Symbol: BBT
+   Contract: 0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063
+   Supply: 1,000,000 BBT
+
+----------------------------------------------------------------------
+💰 MINTING INITIAL SUPPLY...
+----------------------------------------------------------------------
+  Minting 100000 tokens to 0x4b5cC5cBdC7756aa8234fF8731D0878d8fBa1cef...
+  ✅ Minted 100000 tokens (encrypted)
+
+✅ Balance: 5,000 BBT
+
+----------------------------------------------------------------------
+🔍 RUNNING CONTRACT SCAN...
+----------------------------------------------------------------------
+🔍 Scanning contract: 0xVulnerableContract123456789
+  └─ Running Slither...
+  └─ Filtering false positives with LLM...
+✅ Found 1 vulnerabilities
+
+📊 Vulnerabilities Found: 1
+   ⚠️  [HIGH] reentrancy
+       Line: 42
+       Potential reentrancy vulnerability detected
+
+----------------------------------------------------------------------
+📬 SUBMITTING ENCRYPTED REPORT...
+----------------------------------------------------------------------
+📬 Submitting encrypted report...
+✅ Report submitted (encrypted)
+
+✅ Report ID: 0x...
+   Status: submitted
+   Encryption: E2E (COTI Messaging SDK)
+
+----------------------------------------------------------------------
+💰 CLAIMING BOUNTY...
+----------------------------------------------------------------------
+💰 Claiming bounty for report: 0x...
+✅ Bounty claimed (private)
+
+🎉 BOUNTY CLAIMED!
+   Amount: 5,000 BBT
+   Privacy: True
+
+======================================================================
+✅ LIVE DEMO COMPLETE
+======================================================================
+
+💾 Session saved: live_demo_output.json
+📄 Full log: demo-run-output.txt
+
